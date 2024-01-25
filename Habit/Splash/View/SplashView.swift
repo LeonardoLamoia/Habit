@@ -14,7 +14,7 @@ struct SplashView: View {
     var body: some View {
         switch state {
         case .loading:
-            Text("Loading")
+           loadingView()
         case .goToSignInScreen:
             Text("carregar tela de login")
         case .goToHomeScreen:
@@ -25,6 +25,20 @@ struct SplashView: View {
     }
 }
 
+extension SplashView {
+    func loadingView() -> some View {
+        ZStack {
+            Image("logo")
+                .resizable()
+                .scaledToFit()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .padding(20)
+                .background(Color.white)
+                .ignoresSafeArea()
+        }
+    }
+}
+
 #Preview {
-    SplashView(state: .error("erro no servidor. Tente mais tarde!"))
+    SplashView(state: .loading)
 }
