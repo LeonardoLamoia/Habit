@@ -21,7 +21,7 @@ struct SignInView: View {
     @State var navigationHidden = true
     
     var body: some View {
-        NavigationView {
+        NavigationStack{
             
             ScrollView(showsIndicators: false){
                 
@@ -100,14 +100,10 @@ extension SignInView {
                 .padding(.top, 48)
             
             ZStack {
-                NavigationLink(
-                    destination: Text("Tela de cadastro"),
-                    tag: 1,
-                    selection: $action,
-                    label: { EmptyView() })
-                
-                Button("Realiza seu Cadastro") {
-                    self.action = 1
+                NavigationLink {
+                    Text("Tela de cadastro")
+                } label: {
+                    Text("Realize seu Cadastro")
                 }
             }
         }
