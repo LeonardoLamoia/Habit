@@ -52,9 +52,9 @@ extension SplashView {
     }
 }
 
-let viewModel = SplashViewModel()
-let splash = SplashView(viewModel: viewModel)
-
 #Preview {
-    splash
+    let viewModel = SplashViewModel()
+    let splash = SplashView(viewModel: viewModel)
+    return splash
 }
+
