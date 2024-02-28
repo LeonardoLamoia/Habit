@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B6DA7372B8FF747004D27EC /* SignInUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6DA7362B8FF747004D27EC /* SignInUIState.swift */; };
 		1B6FFF072B61DFB7005B00EA /* HabitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6FFF062B61DFB7005B00EA /* HabitApp.swift */; };
 		1B6FFF0B2B61DFB8005B00EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B6FFF0A2B61DFB8005B00EA /* Assets.xcassets */; };
 		1B6FFF0E2B61DFB8005B00EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B6FFF0D2B61DFB8005B00EA /* Preview Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B6DA7362B8FF747004D27EC /* SignInUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUIState.swift; sourceTree = "<group>"; };
 		1B6FFF032B61DFB7005B00EA /* Habit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B6FFF062B61DFB7005B00EA /* HabitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitApp.swift; sourceTree = "<group>"; };
 		1B6FFF0A2B61DFB8005B00EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		1BC589F12B8E721700CF01D3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1B6DA7362B8FF747004D27EC /* SignInUIState.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				1BC589F62B8E729400CF01D3 /* SignInViewModel.swift in Sources */,
 				1B6FFF192B61E3C1005B00EA /* SplashView.swift in Sources */,
 				1BC589EE2B8D44FB00CF01D3 /* SplashViewModel.swift in Sources */,
+				1B6DA7372B8FF747004D27EC /* SignInUIState.swift in Sources */,
 				1BC589F82B8E734C00CF01D3 /* SplashViewRouter.swift in Sources */,
 				1BC589F42B8E725000CF01D3 /* SignInView.swift in Sources */,
 			);
