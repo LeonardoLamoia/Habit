@@ -15,7 +15,7 @@ struct SplashView: View {
         Group {
             switch viewModel.uiState {
             case .loading:
-               loadingView()
+                loadingView()
             case .goToSignInScreen:
                 viewModel.signInView()
             case .goToHomeScreen:
@@ -42,11 +42,11 @@ extension SplashView {
             
             if let error = error {
                 Text("")
-                    .alert(isPresented: .constant(true), content: {
+                    .alert(isPresented: .constant(true)) {
                         Alert(title: Text("Habit"), message: Text(error), dismissButton: .default(Text("Ok")) {
                             
                         })
-                    })
+                    }
             }
         }
     }
