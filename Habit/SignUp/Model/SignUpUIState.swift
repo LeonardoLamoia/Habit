@@ -11,6 +11,6 @@ import SwiftUI
 enum SignUpUIState {
     case none
     case loading
-    case goToHomeScreen
+    case sucess
     case error(String)
 }
