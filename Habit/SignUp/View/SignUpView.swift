@@ -16,7 +16,8 @@ struct SignUpView: View {
     @State var phone = ""
     @State var birthday = ""
     @State var gender = Gender.male
-    // TODO: gender
+    
+    @ObservedObject var viewModel: SignUpViewModel
     
     
     var body: some View {
@@ -51,6 +52,15 @@ struct SignUpView: View {
                     Spacer()
                 }.padding(.horizontal, 8)
             }.padding()
+            
+            if case SignUpUIState.error(let value) = viewModel.uiState {
+                Text("")
+                    .alert(isPresented: .constant(true)) {
+                        Alert(title: Text("Habit"), message: Text(value), dismissButton: .default(Text("Ok")) {
+                            
+                        })
+                    }
+            }
         }
     }
 }
@@ -113,11 +123,13 @@ extension SignUpView {
 extension SignUpView {
     var saveButton: some View {
         Button("Realize o seu Cadastro") {
-            // ViewModel
+            viewModel.signUp()
         }
     }
 }
 
 #Preview {
-    SignUpView()
+    let viewModel = SignUpViewModel()
+    let signUp = SignUpView(viewModel: viewModel)
+    return signUp
 }
