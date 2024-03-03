@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B02490F2B94E6A20045C51A /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02490E2B94E6A20045C51A /* SignUpView.swift */; };
+		1B0249132B94EE610045C51A /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0249122B94EE610045C51A /* Gender.swift */; };
 		1B6DA7372B8FF747004D27EC /* SignInUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6DA7362B8FF747004D27EC /* SignInUIState.swift */; };
 		1B6FFF072B61DFB7005B00EA /* HabitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6FFF062B61DFB7005B00EA /* HabitApp.swift */; };
 		1B6FFF0B2B61DFB8005B00EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B6FFF0A2B61DFB8005B00EA /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		1B02490E2B94E6A20045C51A /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		1B0249122B94EE610045C51A /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 		1B6DA7362B8FF747004D27EC /* SignInUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUIState.swift; sourceTree = "<group>"; };
 		1B6FFF032B61DFB7005B00EA /* Habit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B6FFF062B61DFB7005B00EA /* HabitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitApp.swift; sourceTree = "<group>"; };
@@ -84,6 +86,22 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		1B0249102B94EE3C0045C51A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1B0249112B94EE4F0045C51A /* Model */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1B0249112B94EE4F0045C51A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B0249122B94EE610045C51A /* Gender.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1B6FFEFA2B61DFB6005B00EA = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +121,7 @@
 		1B6FFF052B61DFB7005B00EA /* Habit */ = {
 			isa = PBXGroup;
 			children = (
+				1B0249102B94EE3C0045C51A /* Common */,
 				1B02490A2B94E6680045C51A /* SignUp */,
 				1BD7E6A52B92485F00D2265B /* Home */,
 				1BC589EF2B8E720100CF01D3 /* SignIn */,
@@ -303,6 +322,7 @@
 				1BD7E6AA2B92489200D2265B /* HomeView.swift in Sources */,
 				1BD7E6A42B92480B00D2265B /* SignInViewRouter.swift in Sources */,
 				1B6FFF192B61E3C1005B00EA /* SplashView.swift in Sources */,
+				1B0249132B94EE610045C51A /* Gender.swift in Sources */,
 				1BC589EE2B8D44FB00CF01D3 /* SplashViewModel.swift in Sources */,
 				1B6DA7372B8FF747004D27EC /* SignInUIState.swift in Sources */,
 				1BC589F82B8E734C00CF01D3 /* SplashViewRouter.swift in Sources */,
