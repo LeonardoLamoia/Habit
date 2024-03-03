@@ -27,5 +27,9 @@ extension SignInViewModel {
     func homeView() -> some View {
         return SignInViewRouter.makeHomeView()
     }
+    
+    func signUpView() -> some View {
+        return SignInViewRouter.makeSignUpView()
+    }
 }
 

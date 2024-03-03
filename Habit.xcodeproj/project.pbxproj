@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B02490F2B94E6A20045C51A /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02490E2B94E6A20045C51A /* SignUpView.swift */; };
 		1B6DA7372B8FF747004D27EC /* SignInUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6DA7362B8FF747004D27EC /* SignInUIState.swift */; };
 		1B6FFF072B61DFB7005B00EA /* HabitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6FFF062B61DFB7005B00EA /* HabitApp.swift */; };
 		1B6FFF0B2B61DFB8005B00EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B6FFF0A2B61DFB8005B00EA /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B02490E2B94E6A20045C51A /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		1B6DA7362B8FF747004D27EC /* SignInUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUIState.swift; sourceTree = "<group>"; };
 		1B6FFF032B61DFB7005B00EA /* Habit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B6FFF062B61DFB7005B00EA /* HabitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitApp.swift; sourceTree = "<group>"; };
@@ -50,6 +52,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B02490A2B94E6680045C51A /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				1B02490B2B94E66E0045C51A /* View */,
+				1B02490C2B94E6730045C51A /* ViewModel */,
+				1B02490D2B94E6780045C51A /* Model */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		1B02490B2B94E66E0045C51A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B02490E2B94E6A20045C51A /* SignUpView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B02490C2B94E6730045C51A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1B02490D2B94E6780045C51A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1B6FFEFA2B61DFB6005B00EA = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +103,7 @@
 		1B6FFF052B61DFB7005B00EA /* Habit */ = {
 			isa = PBXGroup;
 			children = (
+				1B02490A2B94E6680045C51A /* SignUp */,
 				1BD7E6A52B92485F00D2265B /* Home */,
 				1BC589EF2B8E720100CF01D3 /* SignIn */,
 				1B6FFF142B61E377005B00EA /* Splash */,
@@ -264,6 +299,7 @@
 				1BD7E6AC2B9248B100D2265B /* HomeViewModel.swift in Sources */,
 				1B6FFF072B61DFB7005B00EA /* HabitApp.swift in Sources */,
 				1BC589F62B8E729400CF01D3 /* SignInViewModel.swift in Sources */,
+				1B02490F2B94E6A20045C51A /* SignUpView.swift in Sources */,
 				1BD7E6AA2B92489200D2265B /* HomeView.swift in Sources */,
 				1BD7E6A42B92480B00D2265B /* SignInViewRouter.swift in Sources */,
 				1B6FFF192B61E3C1005B00EA /* SplashView.swift in Sources */,
