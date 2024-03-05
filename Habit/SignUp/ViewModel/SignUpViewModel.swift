@@ -20,7 +20,7 @@ class SignUpViewModel: ObservableObject {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
 //            self.uiState = .error("Usuário já existente")
-            self.uiState = .sucess
+            self.uiState = .success
             self.publisher.send(true)
         }
     }
