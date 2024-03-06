@@ -37,7 +37,6 @@ extension SplashView {
                 .scaledToFit()
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .padding(20)
-                .background(Color.white)
                 .ignoresSafeArea()
             
             if let error = error {
@@ -52,9 +51,15 @@ extension SplashView {
     }
 }
 
-#Preview {
-    let viewModel = SplashViewModel()
-    let splash = SplashView(viewModel: viewModel)
-    return splash
+struct SplashView_Previews: PreviewProvider {
+    static var previews: some View {
+        ForEach(ColorScheme.allCases, id: \.self) { value in
+            let viewModel = SplashViewModel()
+            SplashView(viewModel: viewModel)
+                .previewDevice("iPhone 12")
+                .preferredColorScheme(value)
+        }
+    }
 }
+
 

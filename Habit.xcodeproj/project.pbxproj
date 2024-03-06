@@ -189,9 +189,9 @@
 		1B6FFF142B61E377005B00EA /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				1B6FFF152B61E390005B00EA /* View */,
 				1BC589EC2B8D44D300CF01D3 /* ViewModel */,
 				1B6FFF162B61E397005B00EA /* Model */,
-				1B6FFF152B61E390005B00EA /* View */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
