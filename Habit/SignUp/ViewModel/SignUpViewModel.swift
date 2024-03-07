@@ -28,11 +28,13 @@ class SignUpViewModel: ObservableObject {
     func signUp() {
         self.uiState = .loading
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//            self.uiState = .error("Usuário já existente")
-            self.uiState = .success
-            self.publisher.send(true)
-        }
+        WebService.postUser(fullName: fullName, email: email, password: password, document: document, phone: phone, birthday: birthday, gender: gender.index)
+        
+////        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//////            self.uiState = .error("Usuário já existente")
+////            self.uiState = .success
+////            self.publisher.send(true)
+//        }
     }
     
 }
