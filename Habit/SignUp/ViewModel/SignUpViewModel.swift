@@ -46,13 +46,13 @@ class SignUpViewModel: ObservableObject {
         
         let birthday = formatter.string(from: dateFormatted)
         
-        WebService.postUser(request: SignUpRequest(fullName: fullName, email: email, password: password, document: document, phone: phone, birthday: birthday, gender: gender.index))
+        WebService.postUser(request: SignUpRequest(fullName: fullName, email: email, password: password, document: document, phone: phone, birthday: birthday, gender: gender.index)) { (successResponse, errorResponse) in
+            
+            if let error = errorResponse {
+                self.uiState = .error(error.detail)
+            }
+        }
         
-////        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//////            self.uiState = .error("Usuário já existente")
-////            self.uiState = .success
-////            self.publisher.send(true)
-//        }
     }
     
 }
@@ -62,3 +62,4 @@ extension SignUpViewModel {
         return SignUpViewRouter.makeHomeView()
     }
 }
+

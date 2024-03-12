@@ -74,9 +74,7 @@ enum WebService {
             }
             
             print(String(data: data, encoding: .utf8))
-            
             print("response\n")
-            
             print(response)
             
             
@@ -85,16 +83,15 @@ enum WebService {
         task.resume()
     }
     
-    static func postUser(request: SignUpRequest) {
+    static func postUser(request: SignUpRequest, completion: @escaping (Bool?, ErrorResponse?) -> Void) {
         call(path: .postUser, body: request, completion: { result in
             switch result {
             case .failure(let error, let data):
                 if let data = data {
                     if error == .badRequest {
-                        print(String(data: data, encoding: .utf8))
                         let decoder = JSONDecoder()
-                        let response = try? decoder.decode(SignUpResponse.self, from: data)
-                        print(response?.detail)
+                        let response = try? decoder.decode(ErrorResponse.self, from: data)
+                        completion(nil, response)
                     }
                 }
                 break
