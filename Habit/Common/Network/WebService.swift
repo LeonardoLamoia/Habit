@@ -56,7 +56,7 @@ enum WebService {
         urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
         urlRequest.httpBody = jsonData
         
-        let task = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
+        let task = URLSession.shared.dataTask(with: urlRequest) { data, response, error in //roda em background (Non-MainThread)
             guard let data = data, error == nil else {
                 completion(.failure(.internalServerError, nil))
                 return
@@ -96,7 +96,7 @@ enum WebService {
                 }
                 break
             case .success(let data):
-                print(String(data: data, encoding: .utf8))
+                completion(true, nil)
                 break
                 
             }
