@@ -42,7 +42,7 @@ class SignInViewModel: ObservableObject {
             if let error = errorResponse {
                 DispatchQueue.main.async {
                     // Main Thread
-                    self.uiState = .error(error.detail)
+                    self.uiState = .error(error.detail.message)
                 }
             }
             
