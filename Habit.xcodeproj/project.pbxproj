@@ -38,6 +38,7 @@
 		1BD7E6A42B92480B00D2265B /* SignInViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7E6A32B92480B00D2265B /* SignInViewRouter.swift */; };
 		1BD7E6AA2B92489200D2265B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7E6A92B92489200D2265B /* HomeView.swift */; };
 		1BD7E6AC2B9248B100D2265B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7E6AB2B9248B100D2265B /* HomeViewModel.swift */; };
+		1BE199772BB3AF5700E387A0 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE199762BB3AF5700E387A0 /* AppError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		1BD7E6A32B92480B00D2265B /* SignInViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewRouter.swift; sourceTree = "<group>"; };
 		1BD7E6A92B92489200D2265B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1BD7E6AB2B9248B100D2265B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1BE199762BB3AF5700E387A0 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			children = (
 				1B0249122B94EE610045C51A /* Gender.swift */,
 				1B124E592BA0851900E7DF41 /* ErrorResponse.swift */,
+				1BE199762BB3AF5700E387A0 /* AppError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 			files = (
 				1B124E582B9F770800E7DF41 /* SignUpResponse.swift in Sources */,
 				1B6FFF1B2B61E4B6005B00EA /* SplashUIState.swift in Sources */,
+				1BE199772BB3AF5700E387A0 /* AppError.swift in Sources */,
 				1BD7E6AC2B9248B100D2265B /* HomeViewModel.swift in Sources */,
 				1B124E652BAF60B100E7DF41 /* RemoteDataSource.swift in Sources */,
 				1B6FFF072B61DFB7005B00EA /* HabitApp.swift in Sources */,
