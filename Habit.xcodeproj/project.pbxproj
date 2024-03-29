@@ -41,6 +41,8 @@
 		1BE199772BB3AF5700E387A0 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE199762BB3AF5700E387A0 /* AppError.swift */; };
 		1BE1997A2BB66A3F00E387A0 /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE199792BB66A3F00E387A0 /* SignUpInteractor.swift */; };
 		1BE1997C2BB66B2B00E387A0 /* SignUpRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1997B2BB66B2B00E387A0 /* SignUpRemoteDataSource.swift */; };
+		1BE1997E2BB7240100E387A0 /* UserAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1997D2BB7240100E387A0 /* UserAuth.swift */; };
+		1BE199802BB7253600E387A0 /* LocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1997F2BB7253600E387A0 /* LocalDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +81,8 @@
 		1BE199762BB3AF5700E387A0 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		1BE199792BB66A3F00E387A0 /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
 		1BE1997B2BB66B2B00E387A0 /* SignUpRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRemoteDataSource.swift; sourceTree = "<group>"; };
+		1BE1997D2BB7240100E387A0 /* UserAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuth.swift; sourceTree = "<group>"; };
+		1BE1997F2BB7253600E387A0 /* LocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,7 @@
 				1B0249122B94EE610045C51A /* Gender.swift */,
 				1B124E592BA0851900E7DF41 /* ErrorResponse.swift */,
 				1BE199762BB3AF5700E387A0 /* AppError.swift */,
+				1BE1997D2BB7240100E387A0 /* UserAuth.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				1B124E532B99254F00E7DF41 /* WebService.swift */,
+				1BE1997F2BB7253600E387A0 /* LocalDataSource.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -427,7 +433,9 @@
 				1B124E652BAF60B100E7DF41 /* SignInRemoteDataSource.swift in Sources */,
 				1B6FFF072B61DFB7005B00EA /* HabitApp.swift in Sources */,
 				1B124E512B96A7BB00E7DF41 /* LoadingButtonView.swift in Sources */,
+				1BE199802BB7253600E387A0 /* LocalDataSource.swift in Sources */,
 				1B124E602BAF4C3700E7DF41 /* SignInErrorResponse.swift in Sources */,
+				1BE1997E2BB7240100E387A0 /* UserAuth.swift in Sources */,
 				1B124E4F2B96A4E300E7DF41 /* String+Extension.swift in Sources */,
 				1B124E5C2BABB10800E7DF41 /* SignInRequest.swift in Sources */,
 				1B0249192B94F7B00045C51A /* SignUpViewRouter.swift in Sources */,
