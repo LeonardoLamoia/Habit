@@ -9,12 +9,12 @@ import Foundation
 import Combine
 
 
-class RemoteDataSource {
+class SignInRemoteDataSource {
     
     // padrão singleton
     // Temos apenas 1 unico objeto vivo dentro da aplicação
     
-    static var shared: RemoteDataSource = RemoteDataSource()
+    static var shared: SignInRemoteDataSource = SignInRemoteDataSource()
     
     private init() {
         
