@@ -35,7 +35,7 @@ class SplashViewModel: ObservableObject  {
                 
             } 
             // "se nao" se userAuth != null && expirou
-            else if (Date().timeIntervalSince1970 > Date().timeIntervalSince1970 + Double(userAuth!.expires)){
+            else if (Date().timeIntervalSince1970 > Double(userAuth!.expires)){
                 print("token expirou")
                 
             } 

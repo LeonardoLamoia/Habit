@@ -50,11 +50,11 @@ class SignInViewModel: ObservableObject {
                 case .failure(let appError):
                     self.uiState = SignInUIState.error(appError.message)
                     break
-                case .finished:
+                case .finished: 
                     break
                 }
             } receiveValue: { success in
-                let auth = UserAuth(idToken: success.accessToken, refreshToken: success.refreshToken, tokenType: success.tokenType)
+                let auth = UserAuth(idToken: success.accessToken, refreshToken: success.refreshToken, expires: Date().timeIntervalSince1970 + Double(success.expires), tokenType: success.tokenType)
                 self.interactor.insertAuth(userAuth: auth)
                 self.uiState = .goToHomeScreen
             }
