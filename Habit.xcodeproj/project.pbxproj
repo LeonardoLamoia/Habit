@@ -43,6 +43,7 @@
 		1BE1997C2BB66B2B00E387A0 /* SignUpRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1997B2BB66B2B00E387A0 /* SignUpRemoteDataSource.swift */; };
 		1BE1997E2BB7240100E387A0 /* UserAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1997D2BB7240100E387A0 /* UserAuth.swift */; };
 		1BE199802BB7253600E387A0 /* LocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1997F2BB7253600E387A0 /* LocalDataSource.swift */; };
+		1BE199832BB8768800E387A0 /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE199822BB8768800E387A0 /* SplashInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,7 @@
 		1BE1997B2BB66B2B00E387A0 /* SignUpRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRemoteDataSource.swift; sourceTree = "<group>"; };
 		1BE1997D2BB7240100E387A0 /* UserAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuth.swift; sourceTree = "<group>"; };
 		1BE1997F2BB7253600E387A0 /* LocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataSource.swift; sourceTree = "<group>"; };
+		1BE199822BB8768800E387A0 /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +244,7 @@
 		1B6FFF142B61E377005B00EA /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				1BE199812BB8766D00E387A0 /* Interactor */,
 				1B6FFF152B61E390005B00EA /* View */,
 				1BC589EC2B8D44D300CF01D3 /* ViewModel */,
 				1B6FFF162B61E397005B00EA /* Model */,
@@ -355,6 +358,14 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		1BE199812BB8766D00E387A0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1BE199822BB8768800E387A0 /* SplashInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -447,6 +458,7 @@
 				1BD7E6A42B92480B00D2265B /* SignInViewRouter.swift in Sources */,
 				1B0249172B94F7070045C51A /* SignUpViewModel.swift in Sources */,
 				1B0249152B94F6C20045C51A /* SignUpUIState.swift in Sources */,
+				1BE199832BB8768800E387A0 /* SplashInteractor.swift in Sources */,
 				1B6FFF192B61E3C1005B00EA /* SplashView.swift in Sources */,
 				1B124E5A2BA0851900E7DF41 /* ErrorResponse.swift in Sources */,
 				1B0249132B94EE610045C51A /* Gender.swift in Sources */,
