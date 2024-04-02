@@ -31,6 +31,10 @@
 		1B6FFF0E2B61DFB8005B00EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B6FFF0D2B61DFB8005B00EA /* Preview Assets.xcassets */; };
 		1B6FFF192B61E3C1005B00EA /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6FFF182B61E3C1005B00EA /* SplashView.swift */; };
 		1B6FFF1B2B61E4B6005B00EA /* SplashUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6FFF1A2B61E4B6005B00EA /* SplashUIState.swift */; };
+		1BB5D7612BBBA2FF00C53DDE /* HomeViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5D7602BBBA2FF00C53DDE /* HomeViewRouter.swift */; };
+		1BB5D7682BBBA3A700C53DDE /* HabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5D7672BBBA3A700C53DDE /* HabitView.swift */; };
+		1BB5D76A2BBBA3D600C53DDE /* HabitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5D7692BBBA3D600C53DDE /* HabitViewModel.swift */; };
+		1BB5D76C2BBBA53900C53DDE /* HabitUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5D76B2BBBA53900C53DDE /* HabitUIState.swift */; };
 		1BC589EE2B8D44FB00CF01D3 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC589ED2B8D44FB00CF01D3 /* SplashViewModel.swift */; };
 		1BC589F42B8E725000CF01D3 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC589F32B8E725000CF01D3 /* SignInView.swift */; };
 		1BC589F62B8E729400CF01D3 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC589F52B8E729400CF01D3 /* SignInViewModel.swift */; };
@@ -74,6 +78,10 @@
 		1B6FFF0D2B61DFB8005B00EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1B6FFF182B61E3C1005B00EA /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		1B6FFF1A2B61E4B6005B00EA /* SplashUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashUIState.swift; sourceTree = "<group>"; };
+		1BB5D7602BBBA2FF00C53DDE /* HomeViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRouter.swift; sourceTree = "<group>"; };
+		1BB5D7672BBBA3A700C53DDE /* HabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitView.swift; sourceTree = "<group>"; };
+		1BB5D7692BBBA3D600C53DDE /* HabitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitViewModel.swift; sourceTree = "<group>"; };
+		1BB5D76B2BBBA53900C53DDE /* HabitUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitUIState.swift; sourceTree = "<group>"; };
 		1BC589ED2B8D44FB00CF01D3 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		1BC589F32B8E725000CF01D3 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		1BC589F52B8E729400CF01D3 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
@@ -225,6 +233,7 @@
 		1B6FFF052B61DFB7005B00EA /* Habit */ = {
 			isa = PBXGroup;
 			children = (
+				1BB5D7622BBBA36E00C53DDE /* Habit */,
 				1B0249102B94EE3C0045C51A /* Common */,
 				1B02490A2B94E6680045C51A /* SignUp */,
 				1BD7E6A52B92485F00D2265B /* Home */,
@@ -271,6 +280,40 @@
 				1BE199842BB8B7A600E387A0 /* RefreshRequest.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1BB5D7622BBBA36E00C53DDE /* Habit */ = {
+			isa = PBXGroup;
+			children = (
+				1BB5D7662BBBA39000C53DDE /* View */,
+				1BB5D7652BBBA38A00C53DDE /* ViewModel */,
+				1BB5D7642BBBA38200C53DDE /* Model */,
+			);
+			path = Habit;
+			sourceTree = "<group>";
+		};
+		1BB5D7642BBBA38200C53DDE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1BB5D76B2BBBA53900C53DDE /* HabitUIState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1BB5D7652BBBA38A00C53DDE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1BB5D7692BBBA3D600C53DDE /* HabitViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1BB5D7662BBBA39000C53DDE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1BB5D7672BBBA3A700C53DDE /* HabitView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		1BC589EC2B8D44D300CF01D3 /* ViewModel */ = {
@@ -342,6 +385,7 @@
 			isa = PBXGroup;
 			children = (
 				1BD7E6AB2B9248B100D2265B /* HomeViewModel.swift */,
+				1BB5D7602BBBA2FF00C53DDE /* HomeViewRouter.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -443,6 +487,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B124E582B9F770800E7DF41 /* SignUpResponse.swift in Sources */,
+				1BB5D76C2BBBA53900C53DDE /* HabitUIState.swift in Sources */,
 				1B6FFF1B2B61E4B6005B00EA /* SplashUIState.swift in Sources */,
 				1BE199772BB3AF5700E387A0 /* AppError.swift in Sources */,
 				1BE199872BB8BC5200E387A0 /* SplashRemoteDataSource.swift in Sources */,
@@ -469,11 +514,14 @@
 				1B6FFF192B61E3C1005B00EA /* SplashView.swift in Sources */,
 				1B124E5A2BA0851900E7DF41 /* ErrorResponse.swift in Sources */,
 				1B0249132B94EE610045C51A /* Gender.swift in Sources */,
+				1BB5D76A2BBBA3D600C53DDE /* HabitViewModel.swift in Sources */,
+				1BB5D7682BBBA3A700C53DDE /* HabitView.swift in Sources */,
 				1BC589EE2B8D44FB00CF01D3 /* SplashViewModel.swift in Sources */,
 				1BE199852BB8B7A600E387A0 /* RefreshRequest.swift in Sources */,
 				1B6DA7372B8FF747004D27EC /* SignInUIState.swift in Sources */,
 				1BE1997A2BB66A3F00E387A0 /* SignUpInteractor.swift in Sources */,
 				1B124E4C2B96940400E7DF41 /* CustomTextFieldStyle.swift in Sources */,
+				1BB5D7612BBBA2FF00C53DDE /* HomeViewRouter.swift in Sources */,
 				1B4E9D4E2B96863300C2C461 /* EditTextView.swift in Sources */,
 				1B124E562B9F415700E7DF41 /* SignUpRequest.swift in Sources */,
 				1BC589F82B8E734C00CF01D3 /* SplashViewRouter.swift in Sources */,
