@@ -35,6 +35,7 @@
 		1BB5D7682BBBA3A700C53DDE /* HabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5D7672BBBA3A700C53DDE /* HabitView.swift */; };
 		1BB5D76A2BBBA3D600C53DDE /* HabitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5D7692BBBA3D600C53DDE /* HabitViewModel.swift */; };
 		1BB5D76C2BBBA53900C53DDE /* HabitUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5D76B2BBBA53900C53DDE /* HabitUIState.swift */; };
+		1BB5D76F2BBC4BA900C53DDE /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5D76E2BBC4BA900C53DDE /* ButtonStyle.swift */; };
 		1BC589EE2B8D44FB00CF01D3 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC589ED2B8D44FB00CF01D3 /* SplashViewModel.swift */; };
 		1BC589F42B8E725000CF01D3 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC589F32B8E725000CF01D3 /* SignInView.swift */; };
 		1BC589F62B8E729400CF01D3 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC589F52B8E729400CF01D3 /* SignInViewModel.swift */; };
@@ -82,6 +83,7 @@
 		1BB5D7672BBBA3A700C53DDE /* HabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitView.swift; sourceTree = "<group>"; };
 		1BB5D7692BBBA3D600C53DDE /* HabitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitViewModel.swift; sourceTree = "<group>"; };
 		1BB5D76B2BBBA53900C53DDE /* HabitUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitUIState.swift; sourceTree = "<group>"; };
+		1BB5D76E2BBC4BA900C53DDE /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		1BC589ED2B8D44FB00CF01D3 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		1BC589F32B8E725000CF01D3 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		1BC589F52B8E729400CF01D3 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 		1B4E9D4A2B9685BA00C2C461 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1BB5D76D2BBC4B8E00C53DDE /* Modifier */,
 				1B124E4A2B9693E300E7DF41 /* Style */,
 				1B4E9D4D2B96863300C2C461 /* EditTextView.swift */,
 				1B124E502B96A7BB00E7DF41 /* LoadingButtonView.swift */,
@@ -314,6 +317,14 @@
 				1BB5D7672BBBA3A700C53DDE /* HabitView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1BB5D76D2BBC4B8E00C53DDE /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				1BB5D76E2BBC4BA900C53DDE /* ButtonStyle.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 		1BC589EC2B8D44D300CF01D3 /* ViewModel */ = {
@@ -513,6 +524,7 @@
 				1BE199832BB8768800E387A0 /* SplashInteractor.swift in Sources */,
 				1B6FFF192B61E3C1005B00EA /* SplashView.swift in Sources */,
 				1B124E5A2BA0851900E7DF41 /* ErrorResponse.swift in Sources */,
+				1BB5D76F2BBC4BA900C53DDE /* ButtonStyle.swift in Sources */,
 				1B0249132B94EE610045C51A /* Gender.swift in Sources */,
 				1BB5D76A2BBBA3D600C53DDE /* HabitViewModel.swift in Sources */,
 				1BB5D7682BBBA3A700C53DDE /* HabitView.swift in Sources */,
