@@ -36,6 +36,8 @@
 		1BB5D76A2BBBA3D600C53DDE /* HabitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5D7692BBBA3D600C53DDE /* HabitViewModel.swift */; };
 		1BB5D76C2BBBA53900C53DDE /* HabitUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5D76B2BBBA53900C53DDE /* HabitUIState.swift */; };
 		1BB5D76F2BBC4BA900C53DDE /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5D76E2BBC4BA900C53DDE /* ButtonStyle.swift */; };
+		1BB5D7712BBE317600C53DDE /* HabitCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5D7702BBE317600C53DDE /* HabitCardViewModel.swift */; };
+		1BB5D7732BBE327B00C53DDE /* HabitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5D7722BBE327B00C53DDE /* HabitCardView.swift */; };
 		1BC589EE2B8D44FB00CF01D3 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC589ED2B8D44FB00CF01D3 /* SplashViewModel.swift */; };
 		1BC589F42B8E725000CF01D3 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC589F32B8E725000CF01D3 /* SignInView.swift */; };
 		1BC589F62B8E729400CF01D3 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC589F52B8E729400CF01D3 /* SignInViewModel.swift */; };
@@ -84,6 +86,8 @@
 		1BB5D7692BBBA3D600C53DDE /* HabitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitViewModel.swift; sourceTree = "<group>"; };
 		1BB5D76B2BBBA53900C53DDE /* HabitUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitUIState.swift; sourceTree = "<group>"; };
 		1BB5D76E2BBC4BA900C53DDE /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		1BB5D7702BBE317600C53DDE /* HabitCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCardViewModel.swift; sourceTree = "<group>"; };
+		1BB5D7722BBE327B00C53DDE /* HabitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCardView.swift; sourceTree = "<group>"; };
 		1BC589ED2B8D44FB00CF01D3 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		1BC589F32B8E725000CF01D3 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		1BC589F52B8E729400CF01D3 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
@@ -307,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				1BB5D7692BBBA3D600C53DDE /* HabitViewModel.swift */,
+				1BB5D7702BBE317600C53DDE /* HabitCardViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				1BB5D7672BBBA3A700C53DDE /* HabitView.swift */,
+				1BB5D7722BBE327B00C53DDE /* HabitCardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -520,6 +526,7 @@
 				1B124E542B99254F00E7DF41 /* WebService.swift in Sources */,
 				1BD7E6A42B92480B00D2265B /* SignInViewRouter.swift in Sources */,
 				1B0249172B94F7070045C51A /* SignUpViewModel.swift in Sources */,
+				1BB5D7732BBE327B00C53DDE /* HabitCardView.swift in Sources */,
 				1B0249152B94F6C20045C51A /* SignUpUIState.swift in Sources */,
 				1BE199832BB8768800E387A0 /* SplashInteractor.swift in Sources */,
 				1B6FFF192B61E3C1005B00EA /* SplashView.swift in Sources */,
@@ -535,6 +542,7 @@
 				1B124E4C2B96940400E7DF41 /* CustomTextFieldStyle.swift in Sources */,
 				1BB5D7612BBBA2FF00C53DDE /* HomeViewRouter.swift in Sources */,
 				1B4E9D4E2B96863300C2C461 /* EditTextView.swift in Sources */,
+				1BB5D7712BBE317600C53DDE /* HabitCardViewModel.swift in Sources */,
 				1B124E562B9F415700E7DF41 /* SignUpRequest.swift in Sources */,
 				1BC589F82B8E734C00CF01D3 /* SplashViewRouter.swift in Sources */,
 				1B124E5E2BABB25B00E7DF41 /* SignInResponse.swift in Sources */,
