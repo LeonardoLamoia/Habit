@@ -18,7 +18,7 @@ class HabitViewModel: ObservableObject {
     
     
     func onAppear() {
-        self.uiState = .loading
+        self.uiState = .emptyList
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             
@@ -64,7 +64,8 @@ class HabitViewModel: ObservableObject {
                                                         value: "5",
                                                         state: .green))
             
-            self.uiState = .fullList(rows)
+//            self.uiState = .fullList(rows)
+            self.uiState = .error("Falha interna no servidor")
             
         }
     }
