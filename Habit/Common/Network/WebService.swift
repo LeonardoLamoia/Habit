@@ -16,6 +16,8 @@ enum WebService {
         case postUser = "/users"
         case login = "/auth/login"
         case refreshToken = "/auth/refresh-token"
+        
+        case habits = "/users/me/habits"
     }
     
     enum NetworkError {
@@ -47,6 +49,8 @@ enum WebService {
         
         return URLRequest(url: url)
     }
+    
+    
     
     private  static func call(path: Endpoint, method: Method, contentType: ContentType, data: Data?, completion: @escaping (Result) -> Void) {
         
@@ -93,6 +97,15 @@ enum WebService {
         }
         
     }
+    
+    public  static func call(path: Endpoint, method: Method = .get, completion: @escaping (Result) -> Void) {
+        
+        guard var urlRequest = completeUrl(path: path) else { return }
+        
+        
+        call(path: path, method: method, contentType: .json, data: nil, completion: completion)
+    }
+    
     
     
     public  static func call<T: Encodable>(path: Endpoint, method: Method = .get, body: T, completion: @escaping (Result) -> Void) {
