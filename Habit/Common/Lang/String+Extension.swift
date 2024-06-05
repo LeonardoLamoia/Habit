@@ -33,4 +33,12 @@ extension String {
         
         return formatter.string(from: dateFormatted)
     }
+    
+    func toDate(sourcePattern source: String) -> Date? {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.dateFormat = source
+        
+        return formatter.date(from: self)
+    }
 }
