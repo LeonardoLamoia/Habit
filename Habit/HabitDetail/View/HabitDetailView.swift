@@ -11,6 +11,8 @@ struct HabitDetailView: View {
     
     @ObservedObject var viewModel: HabitDetailViewModel
     
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     init(viewModel: HabitDetailViewModel) {
         self.viewModel = viewModel
     }
@@ -24,7 +26,7 @@ struct HabitDetailView: View {
                     .font(.title.bold())
                 
                 Text("Unidade: \(viewModel.label)")
-                    
+                
             }
             
             VStack {
@@ -48,7 +50,12 @@ struct HabitDetailView: View {
             .padding(.vertical, 8)
             
             Button("Cancelar") {
-                //dismiss / pop exit
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+                    withAnimation(.easeOut(duration: 0.15)) {
+                        self.presentationMode.wrappedValue.dismiss()
+                    }
+                }
             }
             .modifier(ButtonStyle())
             .padding(.horizontal, 16)
