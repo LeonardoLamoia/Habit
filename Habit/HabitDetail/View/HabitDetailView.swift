@@ -43,7 +43,7 @@ struct HabitDetailView: View {
             Text("Os registros devem ser feitos em até 24h. \n Hábitos se constroem todos os dias :)")
             
             LoadingButtonView(action: {
-                
+                viewModel.save()
             }, text: "Salvar",
                               showProgress: self.viewModel.uiState == .loading, disabled: self.viewModel.value.isEmpty)
             .padding(.horizontal, 16)
@@ -71,7 +71,7 @@ struct HabitDetailView: View {
 struct HabitDetailView_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(ColorScheme.allCases, id: \.self) {
-            HabitDetailView(viewModel: HabitDetailViewModel(id: 1, name: "Estudar inglês", label: "horas"))
+            HabitDetailView(viewModel: HabitDetailViewModel(id: 1, name: "Estudar inglês", label: "horas", interactor: HabitDetailInteractor()))
                 .previewDevice("iPhone 12")
                 .preferredColorScheme($0)
         }
