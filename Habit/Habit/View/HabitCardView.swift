@@ -1,4 +1,5 @@
 import SwiftUI
+import Combine
 
 struct HabitCardView: View {
     
@@ -78,7 +79,7 @@ struct HabitCardView_Previews: PreviewProvider {
                                                                 name: "Tocar guitarra",
                                                                 label: "horas",
                                                                 value: "2",
-                                                                state: .green))
+                                                                state: .green, habitPublisher: PassthroughSubject<Bool, Never>()))
                     
                     HabitCardView(viewModel: HabitCardViewModel(id: 2,
                                                                 icon: "https://via.placeholder.com/150",
@@ -86,7 +87,7 @@ struct HabitCardView_Previews: PreviewProvider {
                                                                 name: "Tocar guitarra",
                                                                 label: "horas 2",
                                                                 value: "2",
-                                                                state: .green))
+                                                                state: .green, habitPublisher: PassthroughSubject<Bool, Never>()))
                 }
                 .listStyle(.plain)
                 .frame(maxWidth: .infinity)

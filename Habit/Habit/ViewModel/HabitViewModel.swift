@@ -21,14 +21,24 @@ class HabitViewModel: ObservableObject {
     @Published var opened = false
     
     private var cancellableRequest: AnyCancellable?
+    private var cancellableNotify: AnyCancellable?
     private let interactor: HabitInteractor
+    
+    private let habitPublisher = PassthroughSubject<Bool, Never>()
     
     init(interactor: HabitInteractor) {
         self.interactor = interactor
+        
+        cancellableNotify = habitPublisher.sink(receiveValue: { saved in
+            print("saved: \(saved)")
+            self.onAppear()
+            
+        })
     }
     
     deinit {
         cancellableRequest?.cancel()
+        self.cancellableNotify?.cancel()
     }
     
     
@@ -78,7 +88,8 @@ class HabitViewModel: ObservableObject {
                                                       name: $0.name,
                                                       label: $0.label,
                                                       value: "\($0.value ?? 0)",
-                                                      state: state)
+                                                      state: state,
+                                                      habitPublisher: self.habitPublisher)
                         }
                     )
                 }
