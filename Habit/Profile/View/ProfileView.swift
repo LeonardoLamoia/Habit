@@ -11,6 +11,10 @@ struct ProfileView: View {
     
     @ObservedObject var viewModel: ProfileViewModel
     
+    var disableDone: Bool {
+        viewModel.fullNameValidation.failure || viewModel.phoneValidation.failure || viewModel.birthdayValidation.failure
+    }
+    
     @State var email = "leonardotcinf@gmail.com"
     @State var cpf = "129.353.564-59"
     @State var phone = "(32) 99821-9123"
@@ -99,6 +103,14 @@ struct ProfileView: View {
             }
             
             .navigationBarTitle(Text("Editar Perfil"), displayMode: .automatic)
+            .navigationBarItems(trailing: Button(action: {
+                
+            }, label: {
+                Image(systemName: "checkmark")
+                    .foregroundColor(.orange)
+            })
+                .opacity(disableDone ? 0 : 1)
+            )
         }
     }
 }
