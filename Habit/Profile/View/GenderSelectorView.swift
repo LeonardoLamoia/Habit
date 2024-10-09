@@ -41,6 +41,6 @@ struct GenderSelectorView: View {
 
 struct GenderSelectorView_Previews: PreviewProvider {
     static var previews: some View {
-        GenderSelectorView(selectedGender: .constant(.male), genders: Gender.allCases, title: "Teste")
+        GenderSelectorView(selectedGender: .constant(.female), genders: Gender.allCases, title: "Teste")
     }
 }

@@ -60,7 +60,7 @@ class SignUpViewModel: ObservableObject {
         
         let birthday = formatter.string(from: dateFormatted)
         
-        
+        // Main Thread
         let signUpRequest = SignUpRequest(fullName: fullName, email: email, password: password, document: document, phone: phone, birthday: birthday, gender: gender.index)
         
         self.cancellableSignUp = interactor.postUser(signUpRequest: signUpRequest)
