@@ -73,6 +73,7 @@
 		1BFC1D202CB6255500E0BF52 /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC1CF92CB6255500E0BF52 /* SignInRequest.swift */; };
 		1BFC1D222CB6260300E0BF52 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC1D212CB6260300E0BF52 /* ProfileView.swift */; };
 		1BFC1D242CB697C400E0BF52 /* ProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC1D232CB697C400E0BF52 /* ProfileRequest.swift */; };
+		1BFC1D2A2CB731F400E0BF52 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC1D292CB731F400E0BF52 /* ChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -143,6 +144,7 @@
 		1BFC1D0D2CB6255500E0BF52 /* SignUpViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewRouter.swift; sourceTree = "<group>"; };
 		1BFC1D212CB6260300E0BF52 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		1BFC1D232CB697C400E0BF52 /* ProfileRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRequest.swift; sourceTree = "<group>"; };
+		1BFC1D292CB731F400E0BF52 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,8 +246,8 @@
 		1B6FFF052B61DFB7005B00EA /* Habit */ = {
 			isa = PBXGroup;
 			children = (
+				1BFC1D252CB7317D00E0BF52 /* Charts */,
 				1BE8A4442CB6208200E04688 /* Profile */,
-				1BE8A43D2CB6208200E04688 /* Model */,
 				1BC021CE2C17CAF00099FEDC /* HabitDetail */,
 				1BB5D7622BBBA36E00C53DDE /* Habit */,
 				1B0249102B94EE3C0045C51A /* Common */,
@@ -445,6 +447,7 @@
 		1BE8A4442CB6208200E04688 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				1BE8A43D2CB6208200E04688 /* Model */,
 				1BE8A43A2CB6208200E04688 /* Interactor */,
 				1BE8A4402CB6208200E04688 /* View */,
 				1BE8A4432CB6208200E04688 /* ViewModel */,
@@ -479,8 +482,8 @@
 		1BE8A45D2CB6232300E04688 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				1BE8A4572CB6232300E04688 /* Model */,
 				1BE8A4592CB6232300E04688 /* View */,
+				1BE8A4572CB6232300E04688 /* Model */,
 				1BE8A45C2CB6232300E04688 /* ViewModel */,
 			);
 			path = Home;
@@ -579,6 +582,38 @@
 				1BFC1D0E2CB6255500E0BF52 /* ViewModel */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		1BFC1D252CB7317D00E0BF52 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				1BFC1D262CB7318E00E0BF52 /* View */,
+				1BFC1D272CB7319400E0BF52 /* ViewModel */,
+				1BFC1D282CB7319C00E0BF52 /* Model */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		1BFC1D262CB7318E00E0BF52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1BFC1D292CB731F400E0BF52 /* ChartView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1BFC1D272CB7319400E0BF52 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1BFC1D282CB7319C00E0BF52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -704,6 +739,7 @@
 				1BC589EE2B8D44FB00CF01D3 /* SplashViewModel.swift in Sources */,
 				1BE199852BB8B7A600E387A0 /* RefreshRequest.swift in Sources */,
 				1B124E4C2B96940400E7DF41 /* CustomTextFieldStyle.swift in Sources */,
+				1BFC1D2A2CB731F400E0BF52 /* ChartView.swift in Sources */,
 				1BCAF59D2C191CCA0004F45D /* HabitDetailRemoteDataSource.swift in Sources */,
 				1BE8A4452CB6208200E04688 /* ProfileUIState.swift in Sources */,
 				1BE8A4462CB6208200E04688 /* ProfileViewModel.swift in Sources */,
